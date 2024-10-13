@@ -1,8 +1,8 @@
-// App.js
 import React, { useState } from "react";
+import "./css/App.css"
 import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
-import Cart from "./Cart"; // Import Cart component
+import Cart from "./Cart"; 
 import CartOverview from "./CartOverview"; // Import CartOverview component
 import Wishlist from "./Wishlist"; // Import Wishlist component
 import OrderSummary from "./OrderSummary"; // Import OrderSummary component
@@ -116,8 +116,10 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <h1>Welcome to the Retailer Dashboard</h1>
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <div className="top-part">
+        <h1>Welcome back <span>Username</span> </h1>
+        <SearchBar className="search-bar" searchTerm={searchTerm} setSearchTerm={setSearchTerm}  />
+      </div>
 
       <ManufacturerCategorizer 
         categories={categories} 

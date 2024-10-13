@@ -1,4 +1,6 @@
+// Navbar.js
 import React from "react";
+import './css/Navbar.css';
 
 const Navbar = () => {
   return (
@@ -11,8 +13,8 @@ const Navbar = () => {
           <li><a href="#cart">Cart</a></li>
           <li><a href="#wishlist">Wishlist</a></li>
           <li><a href="#support">Support</a></li>
-          <li><a href="#account">Account</a></li>
           <li><a href="#chatbot">ChatBot</a></li>
+          <li><a href="#account">Account</a></li>
         </ul>
       </nav>
     </header>

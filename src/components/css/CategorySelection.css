@@ -1,0 +1,34 @@
+/* CategorySelection.css */
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .category-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .category-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .category-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,32 @@
+/* App.css */
+
+.top-part {
+    display: flex;
+    justify-content: space-between; /* Aligns title and search bar on opposite sides */
+    align-items: center; /* Vertically aligns items in the center */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color for top-part */
+  }
+  
+  .top-part h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .top-part .search-bar {
+    flex-grow: 0;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .top-part {
+      flex-direction: column;
+    }
+  
+    .top-part .search-bar {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
